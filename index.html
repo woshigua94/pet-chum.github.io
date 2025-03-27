@@ -124,8 +124,8 @@
             animation: fadeIn 2.5s ease-in-out;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            max-width: 300px; /* Control the width of the container */
+            align-items: center;  /* Changed from flex-start to center */
+            max-width: 300px;
             margin-left: auto;
             margin-right: auto;
             gap: 15px;
@@ -134,16 +134,17 @@
         .contact-item {
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* Left align the content */
+            justify-content: center;  /* Changed from flex-start to center */
             width: 100%;
             color: #555;
+            text-align: center;  /* Added to center the text inside */
         }
         
         .contact-item i {
             color: #229799;
             margin-right: 10px;
             font-size: 1.2rem;
-            width: 20px; /* Fixed width for icons to align text */
+            width: 20px;
             text-align: center;
         }
         
