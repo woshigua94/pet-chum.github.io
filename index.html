@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>佩友科技 | Pet-Chum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Comfortaa:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        @font-face {
+            font-family: 'JingNanMaiYuanTi';
+            src: url('fonts/JingNanMaiYuanTi/Kingnammm-Maiyuan-II-Regular-2.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: '幼圆', 'YouYuan', 'Noto Sans SC', sans-serif;
+            font-family: 'JingNanMaiYuanTi', sans-serif;
+            font-weight: normal;
         }
         
         body {
@@ -56,7 +64,6 @@
             color: #229799;
             margin-bottom: 30px;
             animation: fadeIn 1.5s ease-in-out;
-            font-family: 'Varela Round', 'Comfortaa', sans-serif; /* Changed to rounded font */
         }
         
         .tagline {
@@ -73,7 +80,6 @@
             color: #555;
             max-width: 800px;
             animation: fadeIn 2s ease-in-out;
-            font-family: 'Varela Round', 'Comfortaa', sans-serif; /* Changed to rounded font */
         }
         
         .pet-icons {
@@ -111,44 +117,31 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            max-width: 300px;
+            max-width: 300px; /* Control the width of the container */
             margin-left: auto;
             margin-right: auto;
             gap: 15px;
         }
         
         .contact-item {
-            display: grid;
-            grid-template-columns: 20px 85px 1fr;
+            display: flex;
             align-items: center;
+            justify-content: flex-start; /* Left align the content */
             width: 100%;
             color: #555;
-        }
-
-        .contact-label {
-            font-family: '幼圆', 'YouYuan', sans-serif;
-            text-align: right;
-            padding-right: 5px;
-        }
-        
-        .contact-value {
-            font-family: 'Varela Round', 'Comfortaa', sans-serif;
-            text-align: left;
         }
         
         .contact-item i {
             color: #229799;
+            margin-right: 10px;
             font-size: 1.2rem;
+            width: 20px; /* Fixed width for icons to align text */
             text-align: center;
         }
         
         .footer {
             margin-top: 40px;
             color: #777;
-        }
-        
-        .footer p {
-            font-family: 'Varela Round', 'Comfortaa', sans-serif;
         }
         
         @keyframes fadeIn {
@@ -196,13 +189,11 @@
         <div class="contact-info">
             <div class="contact-item">
                 <i class="fa-solid fa-phone"></i>
-                <span class="contact-label">电话号码:</span>
-                <span class="contact-value">+86 18674697467</span>
+                <span>电话号码: +86 18674697467</span>
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <span class="contact-label">电子邮箱:</span>
-                <span class="contact-value">junguochn@outlook.com</span>
+                <span>电子邮箱: junguochn@outlook.com</span>
             </div>
         </div>
         
