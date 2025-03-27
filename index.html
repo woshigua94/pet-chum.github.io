@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佩友科技 | Pet-Chum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .logo-container {
+            margin-bottom: 30px;
+        }
+        
+        .company-name-cn {
+            font-size: 3.5rem;
+            color: #229799;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        .company-name-en {
+            font-size: 2.5rem;
+            color: #229799;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #555;
+            max-width: 800px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .tagline-en {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #555;
+            max-width: 800px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .pet-icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .pet-icon {
+            font-size: 5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .dog-icon {
+            color: #229799;
+        }
+        
+        .dog-icon:hover {
+            transform: rotate(-15deg) scale(1.2);
+        }
+        
+        .cat-icon {
+            color: #229799;
+        }
+        
+        .cat-icon:hover {
+            transform: rotate(15deg) scale(1.2);
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .contact-item i {
+            color: #229799;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            color: #777;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .company-name-cn {
+                font-size: 2.5rem;
+            }
+            .company-name-en {
+                font-size: 1.8rem;
+            }
+            .tagline {
+                font-size: 1.2rem;
+            }
+            .tagline-en {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <h1 class="company-name-cn">佩友科技</h1>
+            <h2 class="company-name-en">Pet-Chum</h2>
+        </div>
+        
+        <p class="tagline">颠覆传统，开启宠物智能陪伴新时代</p>
+        <p class="tagline-en">Pioneering the Era of Intelligent Pet Companionship</p>
+        
+        <div class="pet-icons">
+            <i class="fa-solid fa-dog pet-icon dog-icon"></i>
+            <i class="fa-solid fa-cat pet-icon cat-icon"></i>
+        </div>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>电话 & 微信: 18674697467</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>电子邮箱: junguochn@foxmail.com</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 佩友科技 Pet-Chum. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
