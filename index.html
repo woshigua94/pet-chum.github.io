@@ -124,7 +124,7 @@
             animation: fadeIn 2.5s ease-in-out;
             display: flex;
             flex-direction: column;
-            align-items: center;  /* Changed from flex-start to center */
+            align-items: flex-start;
             max-width: 300px;
             margin-left: auto;
             margin-right: auto;
@@ -134,10 +134,10 @@
         .contact-item {
             display: flex;
             align-items: center;
-            justify-content: center;  /* Changed from flex-start to center */
+            justify-content: flex-start;
             width: 100%;
             color: #555;
-            text-align: center;  /* Added to center the text inside */
+            text-align: right;  /* Added to center the text inside */
         }
         
         .contact-item i {
@@ -145,7 +145,7 @@
             margin-right: 10px;
             font-size: 1.2rem;
             width: 20px;
-            text-align: center;
+            text-align: left;
         }
         
         .footer {
@@ -178,6 +178,17 @@
                 max-width: 280px;
             }
         }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .contact-item a:hover {
+            color: #229799;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -198,11 +209,11 @@
         <div class="contact-info">
             <div class="contact-item">
                 <i class="fa-solid fa-phone"></i>
-                <span>电话号码: +86 18674697467</span>
+                <span>电话号码: <a href="tel:+8618674697467">+86 18674697467</a></span>
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <span>电子邮箱: junguochn@outlook.com</span>
+                <span>电子邮箱: <a href="mailto:junguochn@outlook.com">junguochn@outlook.com</a></span>
             </div>
         </div>
         
